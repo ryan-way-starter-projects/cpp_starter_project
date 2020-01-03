@@ -1,3 +1,0 @@
-/home/rway/projects/cpp_starter_project/build/CMakeFiles/rebuild_cache.dir
-/home/rway/projects/cpp_starter_project/build/CMakeFiles/intro.dir
-/home/rway/projects/cpp_starter_project/build/CMakeFiles/edit_cache.dir
