@@ -1,16 +1,16 @@
 dist: trusty
 sudo: false
 language: cpp
-
 addons:
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+    - ubuntu-toolchain-r-test
     packages:
-      - g++-5
-
-
+    - g++-5
 script:
-  - CXX=/usr/bin/g++-5 CC=/usr/bin/gcc-5 cmake .
-  - cmake --build . -- -j2
-  - ctest -j2
+- CXX=/usr/bin/g++-5 CC=/usr/bin/gcc-5 cmake .
+- cmake --build . -- -j2
+- ctest -j2
+notifications:
+  slack:
+    secure: Bl85yVQIXRkO47NsDjLBTgyEvGos6Syys9lEDyIWO4DMDvopjjqVnjeroP7zug4sYf7EUMxE4d+yOM7tTsj7Etq9wCoswsZI/4hNcNptuJOHIPpwgMoWcgvV9b4OZlVorEf2Y/cYbfEe1J4/rc5YIC+AX0qaZxZofXpCt+BvqfQrb2WISU1gxDloEnt7Ris6YU9AbU8NpSP8Q638qbtSpX0v5zm4+sXOy1K9FToLhW8XBGXo9GuEVkTDbQ9+bXiVCAQlaheDHSJJ8lmGlEUI/PrwEoTAbZwVV5vu+413Y2iCRoK50pDpDKd3ifUu5/BRGxmenJ85Jf8ebyLlEX1p1asmNP5lq5H0+4HQWjW92zo74FFbNJl1kQ0mGVGFaG9Mi3LsrAbdDV5y9THZldRqa588ZH33hVLnRVDa/utikrU2rKqqocNxNBe0DtAapQp4bTUbAreipgQsA9iqbCUA2qUtXyRU6H5et0+HfK5hBrOsRb5geuy1a5qLPsuJYFLFmY2QyORRjHsJAmUWVmI0qoT4KobHynTsbM4SDkwQGpRRBduSGR3Qxok0Ex3neSQfm/xPUI8Dwg9i3al5szBLJ8ULUhpN3OYOIjq3tnuuBu4K2NxVQvvV5knLtg62CUo+HBxFMM1KJeX43Aqt5I4UPnU0GUnLtRRbZ85YqING484=
